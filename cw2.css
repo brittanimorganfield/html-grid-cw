@@ -1,0 +1,48 @@
+body {
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "links links"
+      "article aside"
+      "footer footer";
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr 2fr 1fr;
+    gap: 15px;
+    width: 1580px;
+    height: 730px;
+    margin: 5px;
+  }
+  .a {
+    color: white;
+  }
+  .links {
+    color: white;
+    background-color: rgb(106, 165, 255);
+    grid-area: links;
+    text-align: left;
+  }
+  
+  header {
+    background-color: rgb(211, 207, 201);
+    grid-area: header;
+  }
+  
+  article {
+    background-color: rgb(211, 207, 201);
+    grid-area: article;
+  }
+  
+  aside {
+    background-color: rgb(211, 207, 201);
+    grid-area: aside;
+  }
+  
+  footer {
+    background-color: rgb(211, 207, 201);
+    grid-area: footer;
+  }

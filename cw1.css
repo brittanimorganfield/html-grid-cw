@@ -1,0 +1,49 @@
+body {
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav section aside"
+      "footer footer footer";
+  
+    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 15px;
+    width: 1580px;
+    height: 730px;
+    margin: 5px;
+  }
+  
+  header {
+    padding-left: 10px;
+    grid-area: header;
+    background-color: rgb(105, 105, 105);
+  }
+  
+  nav {
+    padding-left: 10px;
+    grid-area: nav;
+    background-color: rgb(209, 195, 195);
+  }
+  
+  section {
+    padding-left: 10px;
+    grid-area: section;
+    background-color: rgb(163, 162, 162);
+  }
+  
+  aside {
+    padding-left: 10px;
+    grid-area: aside;
+    background-color: rgb(220, 220, 220);
+  }
+  
+  footer {
+    padding-left: 10px;
+    grid-area: footer;
+    background-color: rgb(105, 105, 105);
+  }
